@@ -1,0 +1,20 @@
+<center><h1> Up and down game <br> 업 앤 다운 게임 </h1>
+<form>
+<button  class="btn btn-primary" formaction="/home/hidden" type="submit" name="myButton" data-toggle="modal" >
+    랜덤숫자 뽑기!</button>
+    
+</form>
+<br>
+<p>당신이 생각하는 숫자는?</p>
+<form action='/home/result'>
+    <input type='text' name='number' placeholder='1~99 숫자로 입력' ><br><br>
+    <input class="btn success" type='submit' name='mynumber' value='보내기'  >
+</form>
+</center>
+<font color='white'><%=$choice_int%></font>
+
+<script>
+function myFunction() {
+    alert("숫자가 설정되었습니다.");
+}
+</script>
