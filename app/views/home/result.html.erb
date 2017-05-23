@@ -1,14 +1,13 @@
 <center><h1><strong> 결과입니다.</strong></h1>
 <% if @num <$choice_int && @num > 0 %>
 <p>땡 UP!UP! </p>
-<% else if @num >$choice_int && @num <100 %>
+<% elsif @num >$choice_int && @num <100 %>
 <p>땡 DOWN!DOWN!</p>
-<% else if @num == $choice_int %>
+<% elsif @num == $choice_int %>
 <p>정답 ! 맞추셨습니다. <br></p>
 <% else @num >=100 %>
 <p>1~99 숫자만 입력 해라 ㅡㅡ</p>
-<%end%>
-<%end%>
+
 <%end%>
 
 <br><br><a href='/home/index'>뒤로가기</a>
